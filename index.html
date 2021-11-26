@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Heladería Naidi</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <!-- FontAwesome: Iconos-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <!-- LibrerÃ­as de Leaflet -->
+        <link rellink rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+        </head>
+        <body>
+            <div class='portada'>
+                <h1 style="font-weight: 900;">Heladería Naidi</h1>
+            </div>
+            <div class='navigation'>
+                <nav>
+                    <a href="index.html" class="nav-enlace">Inicio</a>
+                    <a href="#history" class="nav-enlace">Historia</a>
+                    <a href="#products" class="nav-enlace">Productos</a>
+                    <a href="#hwa" class="nav-enlace">¿Quienes Somos?</a>
+                    <a href="#contact" class="nav-enlace">Contacto</a>
+                </nav>
+            </div>
+            <div class='Inicio'>
+                <p></p>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/slider/slider1.jfif" class="d-block w-100" alt="Slider-1">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>¡HELADOS INIGUALABLES!</h5>
+                          <p>La mejor experiencia y el mejor sabor.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slider/slider2.jpg" class="d-block w-100" alt="Slider-2">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>¡DIVERSIDAD DE POSTRES!</h5>
+                          <p>Alta variedad, para todos los gustos</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/slider/slider3.jpg" class="d-block w-100" alt="Slider-3">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>¡BEBIDAS SALUDABLES!</h5>
+                          <p>Jugos naturales para acompañar tu comida.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+
+            <div class="Historia" id="history">
+                <P></P>
+                <div class="secciones"><h2>NUESTRA HISTORIA</h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clock-history" viewBox="0 0 16 16">
+                  <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                  <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                  <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                </svg></div>
+                <p></p>
+                <div class="row">
+                    <div class="col" style="text-align: justify; font-size: 130%;">Durante un recorrido por diferentes heladerías de la comuna 17 de la ciudad de Cali, pude observar que los sabores de helados que se ofrecían eran los sabores tradicionales como lo son el sabor a chocolate, vainilla, mora, fresa etc y que además no son
+                        elaborados con frutas en su gran mayoría sino que por el contrario utilizan saborizantes químicos.</div>
+                    <div class="col" style="text-align: justify; font-size: 130%;">Dichos saborizantes, los cuales son perjudiciales para la salud del ser humano según investigación realizada por la UNESCO, entre otras fuentes. Esta fue la razón que me motivó a pensar en la idea de negocio mediante la creación de helados y jugos caseros hecho con la fruta
+                        propia de la región del pacífico desconocida por muchos posiblemente como lo es el naidí la cual proporcionará al consumidor vitaminas y minerales</div>
+                    <div class="col" style="text-align: justify; font-size: 130%;">El Naidí producto principal de nuestra heladería es llamado así por los habitantes de la costa pacífica del Cauca. En la región del Amazonas de Brasil el naidí se
+                      conoce como acaí. En la costa pacífica del Cauca el naidí se consume como pepiado (manipulación de la pepa o jugo El naidí es un fruto energético que proporciona beneficios al sistema nervioso porque contiene ácidos grasos esenciales
+                      como omega 3 6 y 9.</div>
+                </div>
+            </div>
+
+            <div class="Productos" id="products">
+              <p></p>
+              <div class="secciones"><h2>NUESTROS PRODUCTOS</h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-menu-up" viewBox="0 0 16 16">
+                <path d="M7.646 15.854a.5.5 0 0 0 .708 0L10.207 14H14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3.793l1.853 1.854zM1 9V6h14v3H1zm14 1v2a1 1 0 0 1-1 1h-3.793a1 1 0 0 0-.707.293l-1.5 1.5-1.5-1.5A1 1 0 0 0 5.793 13H2a1 1 0 0 1-1-1v-2h14zm0-5H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2zM2 11.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0-.5.5zm0-4a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5zm0-4a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1h-6a.5.5 0 0 0-.5.5z"/>
+              </svg></div>
+              <p></p>
+              <div class="row">
+                <div class="col">
+                  <div class="wrapper" style="text-align: center;"><img src="img/products/file.jpg"></div>
+                  <div style="text-align: center;"><h3>Helado de Naidi</h3><p>Delicioso helado. Especialidad de la casa.</p></div>
+                </div>
+                <div class="col">
+                  <div class="wrapper" style="text-align: center;"><img src="img/products/helado_extravagante.jpg"></div>
+                  <div style="text-align: center;"><h3>Helados Tradicionales</h3><p>Cumplimos tus antojos.</p></div>
+                </div>
+                <div class="col">
+                  <div class="wrapper" style="text-align: center;"><img src="img/products/jugos.jpg"></div>
+                  <div style="text-align: center;"><h3>Jugos Naturales</h3> <p>Para refrescarte y disfrutar</p></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="HWA" id="hwa">
+              <p></p>
+              <div class="secciones"><h2>¿QUIÉNES SOMOS?</h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/></svg></div>
+            </div><p></p>
+            <div class="row">
+              <div class="col"><img src="img/icons/Mission.png" style="display:block; margin-left: auto; margin-right: auto; width: 160px;"><h3 style="text-align: center; font-size: 250%;">NUESTRA MISIÓN</h3><div style="text-align: justify; font-size: 180%;"><p></p><p>Ofrecer helados de naidí desde el seno del hogar y de calidad, con precios justos para marcar buenos momentos en la vida de las personas que lo disfrutan y cumpliendo con el tiempo de entrega del producto.</p></div></div>
+              <div class="col"><img src="img/icons/Vision.png" style="display:block; margin-left: auto; margin-right: auto; width: 160px;"><h3 style="text-align: center; font-size: 250%;">NUESTRA VISIÓN</h3><div style="text-align: justify; font-size: 180%;"><p></p><p>Para el 2025 contar con local propio y ser líder en la comercialización de helados de naidí, con excelente calidad y precios justos, para lograr satisfacer a mi distinguida clientela.</p></div></div>
+            </div>
+            
+            <div class="Contacto" id="contact">
+              <p></p>
+              <div class="secciones"><h2>CONTACTO</h2><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg></div>
+              </div><p></p>
+              <div class="row">
+                <div class="col-8"><div id ='mapid' style = "height: 570px; position: relative; top: 5px;"></div></div>
+                <div class="col-4"><div class="row"><div class="col"><a href="https://www.facebook.com"><img src="img/icons/fb.png" style="display:block; margin-left: auto; margin-right: auto; width: 160px;"></a><p style="text-align: center;">Síguenos en Facebook</p></p><div class="col"><div class="col"><a href="https://www.twitter.com"><img src="img/icons/twitter.png" style="display:block; margin-left: auto; margin-right: auto; width: 160px;"></a><p style="text-align: center;">Síguenos en Twitter</p></p></div></div><div class="row"><div class="col"><a href="tel:+573000000000"><img src="img/icons/phone.png" style="display:block; margin-left: auto; margin-right: auto; width: 160px;"></a><p style="text-align: center;">Llámanos</p></p></div></div>
+              </div>
+            
+            <script>
+                // Maapas base    
+              var OpenStreetMap = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+              var WorldImagery = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}');
+              var Google = L.tileLayer('http://www.google.cn/maps/vt?lyrs=m@189&gl=cn&x={x}&y={y}&z={z}');
+              var ESRIStreet = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}');
+              var TopoMap = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png');
+
+              // Variable de mapa
+              var map = L.map('mapid', {
+                  layers: [OpenStreetMap],
+                  center: [3.385797, -76.521870], 
+                  maxZoom: 18,
+                  zoom: 18
+              });
+
+              var marker = L.marker([3.385797, -76.521870]).addTo(map);
+              marker.bindPopup("<b>Heladerí­a Naidi!</b><br>Aquí estamos.").openPopup();
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        </body>
+</html>
